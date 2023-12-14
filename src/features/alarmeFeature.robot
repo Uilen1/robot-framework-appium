@@ -17,3 +17,15 @@ Cenario 01: validar que é aberto a tela de cadastrar alarmes
     Então é aberto a tela de "material_clock_hand"
     [Teardown]    obtem evidencia para o cenario "Cenario-01_alarmeFeature"
 
+    
+Cenario 02: validar que é salvo o alarme
+    [Tags]    validado
+    [Setup]    E clico em "Cancel"
+    Dado que estou na aba de "Alarm"
+    Quando clico no botao "Add"
+    E seleciono as horas "10" e os minutos "45"
+    E seleciono o periodo "PM"
+    E clico em "OK"
+    Então o alarme com o horario "12:55" foi salvo
+    [Teardown]    obtem evidencia para o cenario "Cenario-02_alarmeFeature"
+

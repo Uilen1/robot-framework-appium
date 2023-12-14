@@ -1,23 +1,27 @@
 *** Settings ***
 Documentation       Contém todos os metodos para a pagina de alarme
 Library         AppiumLibrary
+Resource        ${EXECDIR}/src/pages/basePage.robot
+Resource        ${EXECDIR}/src/maps/baseMap.robot
 Resource        ${EXECDIR}/src/maps/alarmeMap.robot
+
+*** Variables ***
+${timeout} =    60
 
 *** Keywords ***
 clicar na aba "${aba}"
     ${abaMap} =    aba map "${aba}"
-    Log    ${abaMap}
-    Wait Until Page Contains Element   ${abaMap}
-    ...    10s    
-    ...    não foi possível encontrar o elemento
+    espera elemento "${abaMap}"
     Click Element    ${abaMap}
 
 clicar no botao "${botao}"
     ${botao_map} =     botao map "${botao}"
-    Log    ${botao_map}
-    Wait Until Page Contains Element   ${botao_map}
-    ...    10s
-    ...    não foi possível encontrar o elemento
+    espera elemento "${botao_map}"
     Click Element    ${botao_map}
+
+
+o alarme com o horario "${horario}" foi salvo
+    ${elementMap} =     textView contains text map "${horario}"
+    espera elemento "${elementMap}"
 
 
