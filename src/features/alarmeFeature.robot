@@ -26,6 +26,6 @@ Cenario 02: validar que é salvo o alarme
     E seleciono as horas "10" e os minutos "45"
     E seleciono o periodo "PM"
     E clico em "OK"
-    Então o alarme com o horario "12:55" foi salvo
+    Então o alarme com o horario "10:45" foi salvo
     [Teardown]    obtem evidencia para o cenario "Cenario-02_alarmeFeature"
 
