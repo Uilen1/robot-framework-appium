@@ -14,14 +14,10 @@ seleciono as horas "${hour}" e os minutos "${min}"
     clico textView pelo texto "${min}" com "1" cliques
 
 
-#seleciono as horas "${hour}" e os minutos "${min}"
-#    clico view pelo resource-id "hour" com "2" cliques
-#    clico textView pelo texto "${hour}" com "1" cliques
-#    insiro o texto "${hour}"
-#    clico no botao pelo nome "timepicker"
-#    clico view pelo resource-id "minute" com "2" cliques
-#    clico textView pelo texto "${min}" com "1" cliques
-#    insiro o texto "${min}"
+digito as horas "${hour}" e os minutos "${min}"
+    clico no botao pelo id "mode"
+    insiro o texto "${hour}" no elemento "Hour"
+    insiro o texto "${min}" no elemento "Minute"
 
 
 seleciono o periodo "${texto}"

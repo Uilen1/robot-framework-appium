@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231213 21:37:03.339" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231215 11:59:57.919" rpa="false" schemaversion="4">
 <suite id="s1" name="alarmeFeature" source="C:\Users\Uilen.Moreira\Desktop\Projeto\robot-framework-appium\src\features\alarmeFeature.robot">
 <kw name="abrir aplicativo" library="baseConfiguration" type="SETUP">
 <doc>abre o aplicativo mobile</doc>
@@ -18,9 +18,9 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20231213 21:37:03.913" endtime="20231213 21:37:19.424"/>
+<status status="PASS" starttime="20231215 11:59:58.608" endtime="20231215 12:00:09.525"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:03.912" endtime="20231213 21:37:19.425"/>
+<status status="PASS" starttime="20231215 11:59:58.607" endtime="20231215 12:00:09.525"/>
 </kw>
 <test id="s1-t1" name="Cenario 01: validar que é aberto a tela de cadastrar alarmes" line="13">
 <kw name="Dado que estou na aba de &quot;Alarm&quot;" library="BDDpt-br" sourcename="Dado ${keywords}">
@@ -34,43 +34,43 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <kw name="Log" library="BuiltIn">
 <arg>//android.widget.FrameLayout[contains(@content-desc,'${aba}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:19.442" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:19.441" endtime="20231213 21:37:19.442"/>
+<msg timestamp="20231215 12:00:09.535" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:09.535" endtime="20231215 12:00:09.535"/>
 </kw>
-<msg timestamp="20231213 21:37:19.442" level="INFO">${abaMap} = //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:19.441" endtime="20231213 21:37:19.443"/>
+<msg timestamp="20231215 12:00:09.535" level="INFO">${abaMap} = //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:09.534" endtime="20231215 12:00:09.535"/>
 </kw>
-<kw name="espera elemento &quot;${abaMap}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${abaMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:19.444" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:19.444" endtime="20231213 21:37:19.444"/>
+<msg timestamp="20231215 12:00:09.537" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:09.536" endtime="20231215 12:00:09.537"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:22.866" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:19.445" endtime="20231213 21:37:22.866"/>
+<msg timestamp="20231215 12:00:12.182" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:09.537" endtime="20231215 12:00:12.182"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:19.443" endtime="20231213 21:37:22.866"/>
+<status status="PASS" starttime="20231215 12:00:09.535" endtime="20231215 12:00:12.182"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${abaMap}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231213 21:37:22.868" level="INFO">Clicking element '//android.widget.FrameLayout[contains(@content-desc,'Alarm')]'.</msg>
-<msg timestamp="20231213 21:37:24.153" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:22.866" endtime="20231213 21:37:24.154"/>
+<msg timestamp="20231215 12:00:12.184" level="INFO">Clicking element '//android.widget.FrameLayout[contains(@content-desc,'Alarm')]'.</msg>
+<msg timestamp="20231215 12:00:13.468" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:12.182" endtime="20231215 12:00:13.468"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:19.439" endtime="20231213 21:37:24.154"/>
+<status status="PASS" starttime="20231215 12:00:09.533" endtime="20231215 12:00:13.468"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:19.438" endtime="20231213 21:37:24.154"/>
+<status status="PASS" starttime="20231215 12:00:09.533" endtime="20231215 12:00:13.468"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:19.428" endtime="20231213 21:37:24.154"/>
+<status status="PASS" starttime="20231215 12:00:09.528" endtime="20231215 12:00:13.468"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:19.427" endtime="20231213 21:37:24.155"/>
+<status status="PASS" starttime="20231215 12:00:09.527" endtime="20231215 12:00:13.468"/>
 </kw>
 <kw name="Quando clico no botao &quot;Add&quot;" library="BDDpt-br" sourcename="Quando ${keywords}">
 <kw name="Run Keywords" library="BuiltIn">
@@ -83,43 +83,43 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <kw name="Log" library="BuiltIn">
 <arg>//android.widget.Button[contains(@content-desc,'${botao}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:24.166" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:24.166" endtime="20231213 21:37:24.166"/>
+<msg timestamp="20231215 12:00:13.474" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:13.474" endtime="20231215 12:00:13.474"/>
 </kw>
-<msg timestamp="20231213 21:37:24.167" level="INFO">${botao_map} = //android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:24.165" endtime="20231213 21:37:24.167"/>
+<msg timestamp="20231215 12:00:13.475" level="INFO">${botao_map} = //android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:13.474" endtime="20231215 12:00:13.475"/>
 </kw>
-<kw name="espera elemento &quot;${botao_map}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${botao_map}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:24.168" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:24.168" endtime="20231213 21:37:24.168"/>
+<msg timestamp="20231215 12:00:13.475" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:13.475" endtime="20231215 12:00:13.475"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:24.373" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:24.169" endtime="20231213 21:37:24.373"/>
+<msg timestamp="20231215 12:00:13.623" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:13.475" endtime="20231215 12:00:13.623"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.167" endtime="20231213 21:37:24.373"/>
+<status status="PASS" starttime="20231215 12:00:13.475" endtime="20231215 12:00:13.623"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${botao_map}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231213 21:37:24.374" level="INFO">Clicking element '//android.widget.Button[contains(@content-desc,'Add')]'.</msg>
-<msg timestamp="20231213 21:37:24.615" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:24.373" endtime="20231213 21:37:24.615"/>
+<msg timestamp="20231215 12:00:13.624" level="INFO">Clicking element '//android.widget.Button[contains(@content-desc,'Add')]'.</msg>
+<msg timestamp="20231215 12:00:13.843" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:13.623" endtime="20231215 12:00:13.844"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.164" endtime="20231213 21:37:24.615"/>
+<status status="PASS" starttime="20231215 12:00:13.474" endtime="20231215 12:00:13.844"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.163" endtime="20231213 21:37:24.615"/>
+<status status="PASS" starttime="20231215 12:00:13.473" endtime="20231215 12:00:13.844"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.157" endtime="20231213 21:37:24.615"/>
+<status status="PASS" starttime="20231215 12:00:13.469" endtime="20231215 12:00:13.844"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.156" endtime="20231213 21:37:24.615"/>
+<status status="PASS" starttime="20231215 12:00:13.469" endtime="20231215 12:00:13.844"/>
 </kw>
 <kw name="Então é aberto a tela de &quot;material_clock_hand&quot;" library="BDDpt-br" sourcename="Então ${keywords}">
 <kw name="Run Keywords" library="BuiltIn">
@@ -132,51 +132,51 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <kw name="Log" library="BuiltIn">
 <arg>//android.view.View[contains(@resource-id,'${id}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:24.623" level="INFO">//android.view.View[contains(@resource-id,'material_clock_hand')]</msg>
-<status status="PASS" starttime="20231213 21:37:24.623" endtime="20231213 21:37:24.623"/>
+<msg timestamp="20231215 12:00:13.980" level="INFO">//android.view.View[contains(@resource-id,'material_clock_hand')]</msg>
+<status status="PASS" starttime="20231215 12:00:13.980" endtime="20231215 12:00:13.980"/>
 </kw>
-<msg timestamp="20231213 21:37:24.623" level="INFO">${elementMap} = //android.view.View[contains(@resource-id,'material_clock_hand')]</msg>
-<status status="PASS" starttime="20231213 21:37:24.622" endtime="20231213 21:37:24.623"/>
+<msg timestamp="20231215 12:00:13.980" level="INFO">${elementMap} = //android.view.View[contains(@resource-id,'material_clock_hand')]</msg>
+<status status="PASS" starttime="20231215 12:00:13.979" endtime="20231215 12:00:13.980"/>
 </kw>
-<kw name="espera elemento &quot;${elementMap}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${elementMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:24.624" level="INFO">//android.view.View[contains(@resource-id,'material_clock_hand')]</msg>
-<status status="PASS" starttime="20231213 21:37:24.624" endtime="20231213 21:37:24.624"/>
+<msg timestamp="20231215 12:00:13.982" level="INFO">//android.view.View[contains(@resource-id,'material_clock_hand')]</msg>
+<status status="PASS" starttime="20231215 12:00:13.982" endtime="20231215 12:00:13.982"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:26.354" level="INFO">xpath criteria: //android.view.View[contains(@resource-id,'material_clock_hand')]
-xpath criteria: //android.view.View[contains(@resource-id,'material_clock_hand')]</msg>
-<status status="PASS" starttime="20231213 21:37:24.624" endtime="20231213 21:37:26.354"/>
+<msg timestamp="20231215 12:00:15.342" level="INFO">xpath criteria: //android.view.View[contains(@resource-id,'material_clock_hand')]</msg>
+<status status="PASS" starttime="20231215 12:00:13.982" endtime="20231215 12:00:15.342"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.623" endtime="20231213 21:37:26.354"/>
+<status status="PASS" starttime="20231215 12:00:13.981" endtime="20231215 12:00:15.342"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.622" endtime="20231213 21:37:26.354"/>
+<status status="PASS" starttime="20231215 12:00:13.978" endtime="20231215 12:00:15.342"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.621" endtime="20231213 21:37:26.355"/>
+<status status="PASS" starttime="20231215 12:00:13.850" endtime="20231215 12:00:15.342"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.617" endtime="20231213 21:37:26.355"/>
+<status status="PASS" starttime="20231215 12:00:13.845" endtime="20231215 12:00:15.342"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:24.616" endtime="20231213 21:37:26.355"/>
+<status status="PASS" starttime="20231215 12:00:13.844" endtime="20231215 12:00:15.342"/>
 </kw>
 <kw name="obtem evidencia para o cenario &quot;Cenario-01_alarmeFeature&quot;" library="baseModel" type="TEARDOWN" sourcename="obtem evidencia para o cenario &quot;${cenario}&quot;">
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <arg>${EVIDENCES_DIR}/${cenario}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20231213 21:37:27.970" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidences/Cenario-01_alarmeFeature.png"&gt;&lt;img src="../evidences/Cenario-01_alarmeFeature.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231213 21:37:26.357" endtime="20231213 21:37:27.970"/>
+<msg timestamp="20231215 12:00:15.983" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidences/Cenario-01_alarmeFeature.png"&gt;&lt;img src="../evidences/Cenario-01_alarmeFeature.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231215 12:00:15.343" endtime="20231215 12:00:15.983"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:26.357" endtime="20231213 21:37:27.970"/>
+<status status="PASS" starttime="20231215 12:00:15.343" endtime="20231215 12:00:15.984"/>
 </kw>
+<tag>ct01</tag>
 <tag>validado</tag>
-<status status="PASS" starttime="20231213 21:37:19.425" endtime="20231213 21:37:27.971"/>
+<status status="PASS" starttime="20231215 12:00:09.526" endtime="20231215 12:00:15.984"/>
 </test>
-<test id="s1-t2" name="Cenario 02: validar que é salvo o alarme" line="21">
+<test id="s1-t2" name="Cenario 02: validar que é salvo o alarme" line="20">
 <kw name="E clico em &quot;Cancel&quot;" library="BDDpt-br" type="SETUP" sourcename="E ${keywords}">
 <kw name="Run Keywords" library="BuiltIn">
 <arg>${keywords}</arg>
@@ -188,43 +188,43 @@ xpath criteria: //android.view.View[contains(@resource-id,'material_clock_hand')
 <kw name="Log" library="BuiltIn">
 <arg>//android.widget.Button[contains(@text,'${id}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:27.975" level="INFO">//android.widget.Button[contains(@text,'Cancel')]</msg>
-<status status="PASS" starttime="20231213 21:37:27.975" endtime="20231213 21:37:27.975"/>
+<msg timestamp="20231215 12:00:15.991" level="INFO">//android.widget.Button[contains(@text,'Cancel')]</msg>
+<status status="PASS" starttime="20231215 12:00:15.991" endtime="20231215 12:00:15.991"/>
 </kw>
-<msg timestamp="20231213 21:37:27.976" level="INFO">${botaoMap} = //android.widget.Button[contains(@text,'Cancel')]</msg>
-<status status="PASS" starttime="20231213 21:37:27.975" endtime="20231213 21:37:27.976"/>
+<msg timestamp="20231215 12:00:15.991" level="INFO">${botaoMap} = //android.widget.Button[contains(@text,'Cancel')]</msg>
+<status status="PASS" starttime="20231215 12:00:15.991" endtime="20231215 12:00:15.991"/>
 </kw>
-<kw name="espera elemento &quot;${botaoMap}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${botaoMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:27.976" level="INFO">//android.widget.Button[contains(@text,'Cancel')]</msg>
-<status status="PASS" starttime="20231213 21:37:27.976" endtime="20231213 21:37:27.976"/>
+<msg timestamp="20231215 12:00:15.992" level="INFO">//android.widget.Button[contains(@text,'Cancel')]</msg>
+<status status="PASS" starttime="20231215 12:00:15.992" endtime="20231215 12:00:15.992"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:28.133" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'Cancel')]</msg>
-<status status="PASS" starttime="20231213 21:37:27.976" endtime="20231213 21:37:28.133"/>
+<msg timestamp="20231215 12:00:16.125" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'Cancel')]</msg>
+<status status="PASS" starttime="20231215 12:00:15.992" endtime="20231215 12:00:16.125"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:27.976" endtime="20231213 21:37:28.134"/>
+<status status="PASS" starttime="20231215 12:00:15.991" endtime="20231215 12:00:16.125"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${botaoMap}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231213 21:37:28.136" level="INFO">Clicking element '//android.widget.Button[contains(@text,'Cancel')]'.</msg>
-<msg timestamp="20231213 21:37:28.336" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'Cancel')]</msg>
-<status status="PASS" starttime="20231213 21:37:28.134" endtime="20231213 21:37:28.336"/>
+<msg timestamp="20231215 12:00:16.127" level="INFO">Clicking element '//android.widget.Button[contains(@text,'Cancel')]'.</msg>
+<msg timestamp="20231215 12:00:16.314" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'Cancel')]</msg>
+<status status="PASS" starttime="20231215 12:00:16.126" endtime="20231215 12:00:16.314"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:27.975" endtime="20231213 21:37:28.336"/>
+<status status="PASS" starttime="20231215 12:00:15.990" endtime="20231215 12:00:16.314"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:27.974" endtime="20231213 21:37:28.337"/>
+<status status="PASS" starttime="20231215 12:00:15.990" endtime="20231215 12:00:16.314"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:27.972" endtime="20231213 21:37:28.337"/>
+<status status="PASS" starttime="20231215 12:00:15.987" endtime="20231215 12:00:16.314"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:27.972" endtime="20231213 21:37:28.337"/>
+<status status="PASS" starttime="20231215 12:00:15.986" endtime="20231215 12:00:16.314"/>
 </kw>
 <kw name="Dado que estou na aba de &quot;Alarm&quot;" library="BDDpt-br" sourcename="Dado ${keywords}">
 <kw name="Run Keywords" library="BuiltIn">
@@ -237,43 +237,43 @@ xpath criteria: //android.view.View[contains(@resource-id,'material_clock_hand')
 <kw name="Log" library="BuiltIn">
 <arg>//android.widget.FrameLayout[contains(@content-desc,'${aba}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:28.344" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:28.344" endtime="20231213 21:37:28.344"/>
+<msg timestamp="20231215 12:00:16.321" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:16.321" endtime="20231215 12:00:16.321"/>
 </kw>
-<msg timestamp="20231213 21:37:28.344" level="INFO">${abaMap} = //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:28.343" endtime="20231213 21:37:28.345"/>
+<msg timestamp="20231215 12:00:16.321" level="INFO">${abaMap} = //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:16.320" endtime="20231215 12:00:16.321"/>
 </kw>
-<kw name="espera elemento &quot;${abaMap}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${abaMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:28.346" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:28.345" endtime="20231213 21:37:28.346"/>
+<msg timestamp="20231215 12:00:16.322" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:16.322" endtime="20231215 12:00:16.322"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:29.130" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:28.348" endtime="20231213 21:37:29.130"/>
+<msg timestamp="20231215 12:00:17.081" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:16.322" endtime="20231215 12:00:17.082"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:28.345" endtime="20231213 21:37:29.130"/>
+<status status="PASS" starttime="20231215 12:00:16.321" endtime="20231215 12:00:17.082"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${abaMap}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231213 21:37:29.131" level="INFO">Clicking element '//android.widget.FrameLayout[contains(@content-desc,'Alarm')]'.</msg>
-<msg timestamp="20231213 21:37:29.314" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
-<status status="PASS" starttime="20231213 21:37:29.130" endtime="20231213 21:37:29.314"/>
+<msg timestamp="20231215 12:00:17.084" level="INFO">Clicking element '//android.widget.FrameLayout[contains(@content-desc,'Alarm')]'.</msg>
+<msg timestamp="20231215 12:00:17.294" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:17.082" endtime="20231215 12:00:17.294"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:28.343" endtime="20231213 21:37:29.314"/>
+<status status="PASS" starttime="20231215 12:00:16.320" endtime="20231215 12:00:17.294"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:28.342" endtime="20231213 21:37:29.314"/>
+<status status="PASS" starttime="20231215 12:00:16.319" endtime="20231215 12:00:17.294"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:28.339" endtime="20231213 21:37:29.314"/>
+<status status="PASS" starttime="20231215 12:00:16.316" endtime="20231215 12:00:17.294"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:28.339" endtime="20231213 21:37:29.314"/>
+<status status="PASS" starttime="20231215 12:00:16.315" endtime="20231215 12:00:17.294"/>
 </kw>
 <kw name="Quando clico no botao &quot;Add&quot;" library="BDDpt-br" sourcename="Quando ${keywords}">
 <kw name="Run Keywords" library="BuiltIn">
@@ -286,43 +286,43 @@ xpath criteria: //android.view.View[contains(@resource-id,'material_clock_hand')
 <kw name="Log" library="BuiltIn">
 <arg>//android.widget.Button[contains(@content-desc,'${botao}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:29.321" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:29.321" endtime="20231213 21:37:29.322"/>
+<msg timestamp="20231215 12:00:17.298" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:17.298" endtime="20231215 12:00:17.298"/>
 </kw>
-<msg timestamp="20231213 21:37:29.322" level="INFO">${botao_map} = //android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:29.321" endtime="20231213 21:37:29.322"/>
+<msg timestamp="20231215 12:00:17.298" level="INFO">${botao_map} = //android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:17.298" endtime="20231215 12:00:17.298"/>
 </kw>
-<kw name="espera elemento &quot;${botao_map}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${botao_map}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:29.323" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:29.322" endtime="20231213 21:37:29.323"/>
+<msg timestamp="20231215 12:00:17.300" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:17.299" endtime="20231215 12:00:17.300"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:29.980" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:29.323" endtime="20231213 21:37:29.980"/>
+<msg timestamp="20231215 12:00:17.986" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:17.301" endtime="20231215 12:00:17.987"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:29.322" endtime="20231213 21:37:29.981"/>
+<status status="PASS" starttime="20231215 12:00:17.299" endtime="20231215 12:00:17.987"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${botao_map}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231213 21:37:29.982" level="INFO">Clicking element '//android.widget.Button[contains(@content-desc,'Add')]'.</msg>
-<msg timestamp="20231213 21:37:30.228" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
-<status status="PASS" starttime="20231213 21:37:29.981" endtime="20231213 21:37:30.229"/>
+<msg timestamp="20231215 12:00:17.989" level="INFO">Clicking element '//android.widget.Button[contains(@content-desc,'Add')]'.</msg>
+<msg timestamp="20231215 12:00:18.290" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:17.987" endtime="20231215 12:00:18.290"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:29.320" endtime="20231213 21:37:30.229"/>
+<status status="PASS" starttime="20231215 12:00:17.298" endtime="20231215 12:00:18.290"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:29.320" endtime="20231213 21:37:30.230"/>
+<status status="PASS" starttime="20231215 12:00:17.297" endtime="20231215 12:00:18.290"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:29.316" endtime="20231213 21:37:30.230"/>
+<status status="PASS" starttime="20231215 12:00:17.296" endtime="20231215 12:00:18.290"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:29.315" endtime="20231213 21:37:30.230"/>
+<status status="PASS" starttime="20231215 12:00:17.295" endtime="20231215 12:00:18.290"/>
 </kw>
 <kw name="E seleciono as horas &quot;10&quot; e os minutos &quot;45&quot;" library="BDDpt-br" sourcename="E ${keywords}">
 <kw name="Run Keywords" library="BuiltIn">
@@ -335,29 +335,29 @@ xpath criteria: //android.view.View[contains(@resource-id,'material_clock_hand')
 <kw name="Log" library="BuiltIn">
 <arg>//android.widget.TextView[contains(@text,'${texto}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:30.236" level="INFO">//android.widget.TextView[contains(@text,'10')]</msg>
-<status status="PASS" starttime="20231213 21:37:30.235" endtime="20231213 21:37:30.236"/>
+<msg timestamp="20231215 12:00:18.299" level="INFO">//android.widget.TextView[contains(@text,'10')]</msg>
+<status status="PASS" starttime="20231215 12:00:18.298" endtime="20231215 12:00:18.299"/>
 </kw>
-<msg timestamp="20231213 21:37:30.236" level="INFO">${elementMap} = //android.widget.TextView[contains(@text,'10')]</msg>
-<status status="PASS" starttime="20231213 21:37:30.235" endtime="20231213 21:37:30.236"/>
+<msg timestamp="20231215 12:00:18.299" level="INFO">${elementMap} = //android.widget.TextView[contains(@text,'10')]</msg>
+<status status="PASS" starttime="20231215 12:00:18.298" endtime="20231215 12:00:18.299"/>
 </kw>
-<kw name="espera elemento &quot;${elementMap}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${elementMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:30.237" level="INFO">//android.widget.TextView[contains(@text,'10')]</msg>
-<status status="PASS" starttime="20231213 21:37:30.237" endtime="20231213 21:37:30.237"/>
+<msg timestamp="20231215 12:00:18.300" level="INFO">//android.widget.TextView[contains(@text,'10')]</msg>
+<status status="PASS" starttime="20231215 12:00:18.299" endtime="20231215 12:00:18.300"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:31.697" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'10')]
+<msg timestamp="20231215 12:00:19.641" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'10')]
 xpath criteria: //android.widget.TextView[contains(@text,'10')]</msg>
-<status status="PASS" starttime="20231213 21:37:30.237" endtime="20231213 21:37:31.697"/>
+<status status="PASS" starttime="20231215 12:00:18.300" endtime="20231215 12:00:19.641"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:30.236" endtime="20231213 21:37:31.697"/>
+<status status="PASS" starttime="20231215 12:00:18.299" endtime="20231215 12:00:19.641"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
@@ -367,21 +367,21 @@ xpath criteria: //android.widget.TextView[contains(@text,'10')]</msg>
 <kw name="Log" library="BuiltIn">
 <arg>Current Index: ${i}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:31.697" level="INFO">Current Index: 0</msg>
-<status status="PASS" starttime="20231213 21:37:31.697" endtime="20231213 21:37:31.697"/>
+<msg timestamp="20231215 12:00:19.642" level="INFO">Current Index: 0</msg>
+<status status="PASS" starttime="20231215 12:00:19.642" endtime="20231215 12:00:19.642"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${elementMap}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231213 21:37:31.699" level="INFO">Clicking element '//android.widget.TextView[contains(@text,'10')]'.</msg>
-<msg timestamp="20231213 21:37:31.872" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'10')]</msg>
-<status status="PASS" starttime="20231213 21:37:31.697" endtime="20231213 21:37:31.872"/>
+<msg timestamp="20231215 12:00:19.643" level="INFO">Clicking element '//android.widget.TextView[contains(@text,'10')]'.</msg>
+<msg timestamp="20231215 12:00:19.840" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'10')]</msg>
+<status status="PASS" starttime="20231215 12:00:19.642" endtime="20231215 12:00:19.840"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:31.697" endtime="20231213 21:37:31.872"/>
+<status status="PASS" starttime="20231215 12:00:19.642" endtime="20231215 12:00:19.840"/>
 </iter>
-<status status="PASS" starttime="20231213 21:37:31.697" endtime="20231213 21:37:31.872"/>
+<status status="PASS" starttime="20231215 12:00:19.641" endtime="20231215 12:00:19.841"/>
 </for>
-<status status="PASS" starttime="20231213 21:37:30.235" endtime="20231213 21:37:31.872"/>
+<status status="PASS" starttime="20231215 12:00:18.297" endtime="20231215 12:00:19.841"/>
 </kw>
 <kw name="clico textView pelo texto &quot;${min}&quot; com &quot;1&quot; cliques" library="selectTimePage" sourcename="clico textView pelo texto &quot;${texto}&quot; com &quot;${taps}&quot; cliques">
 <kw name="textView contains text map &quot;${texto}&quot;" library="baseMap" sourcename="textView contains text map &quot;${texto}&quot;">
@@ -389,28 +389,28 @@ xpath criteria: //android.widget.TextView[contains(@text,'10')]</msg>
 <kw name="Log" library="BuiltIn">
 <arg>//android.widget.TextView[contains(@text,'${texto}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:31.873" level="INFO">//android.widget.TextView[contains(@text,'45')]</msg>
-<status status="PASS" starttime="20231213 21:37:31.873" endtime="20231213 21:37:31.873"/>
+<msg timestamp="20231215 12:00:19.843" level="INFO">//android.widget.TextView[contains(@text,'45')]</msg>
+<status status="PASS" starttime="20231215 12:00:19.842" endtime="20231215 12:00:19.843"/>
 </kw>
-<msg timestamp="20231213 21:37:31.873" level="INFO">${elementMap} = //android.widget.TextView[contains(@text,'45')]</msg>
-<status status="PASS" starttime="20231213 21:37:31.873" endtime="20231213 21:37:31.873"/>
+<msg timestamp="20231215 12:00:19.843" level="INFO">${elementMap} = //android.widget.TextView[contains(@text,'45')]</msg>
+<status status="PASS" starttime="20231215 12:00:19.842" endtime="20231215 12:00:19.843"/>
 </kw>
-<kw name="espera elemento &quot;${elementMap}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${elementMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:31.874" level="INFO">//android.widget.TextView[contains(@text,'45')]</msg>
-<status status="PASS" starttime="20231213 21:37:31.874" endtime="20231213 21:37:31.874"/>
+<msg timestamp="20231215 12:00:19.844" level="INFO">//android.widget.TextView[contains(@text,'45')]</msg>
+<status status="PASS" starttime="20231215 12:00:19.843" endtime="20231215 12:00:19.844"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:32.677" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'45')]</msg>
-<status status="PASS" starttime="20231213 21:37:31.874" endtime="20231213 21:37:32.677"/>
+<msg timestamp="20231215 12:00:20.649" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'45')]</msg>
+<status status="PASS" starttime="20231215 12:00:19.844" endtime="20231215 12:00:20.650"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:31.873" endtime="20231213 21:37:32.677"/>
+<status status="PASS" starttime="20231215 12:00:19.843" endtime="20231215 12:00:20.650"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
@@ -420,76 +420,76 @@ xpath criteria: //android.widget.TextView[contains(@text,'10')]</msg>
 <kw name="Log" library="BuiltIn">
 <arg>Current Index: ${i}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:32.678" level="INFO">Current Index: 0</msg>
-<status status="PASS" starttime="20231213 21:37:32.677" endtime="20231213 21:37:32.678"/>
+<msg timestamp="20231215 12:00:20.650" level="INFO">Current Index: 0</msg>
+<status status="PASS" starttime="20231215 12:00:20.650" endtime="20231215 12:00:20.650"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${elementMap}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231213 21:37:32.679" level="INFO">Clicking element '//android.widget.TextView[contains(@text,'45')]'.</msg>
-<msg timestamp="20231213 21:37:32.840" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'45')]</msg>
-<status status="PASS" starttime="20231213 21:37:32.678" endtime="20231213 21:37:32.840"/>
+<msg timestamp="20231215 12:00:20.653" level="INFO">Clicking element '//android.widget.TextView[contains(@text,'45')]'.</msg>
+<msg timestamp="20231215 12:00:20.845" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'45')]</msg>
+<status status="PASS" starttime="20231215 12:00:20.651" endtime="20231215 12:00:20.846"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:32.677" endtime="20231213 21:37:32.840"/>
+<status status="PASS" starttime="20231215 12:00:20.650" endtime="20231215 12:00:20.846"/>
 </iter>
-<status status="PASS" starttime="20231213 21:37:32.677" endtime="20231213 21:37:32.840"/>
+<status status="PASS" starttime="20231215 12:00:20.650" endtime="20231215 12:00:20.846"/>
 </for>
-<status status="PASS" starttime="20231213 21:37:31.872" endtime="20231213 21:37:32.840"/>
+<status status="PASS" starttime="20231215 12:00:19.841" endtime="20231215 12:00:20.846"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:30.235" endtime="20231213 21:37:32.840"/>
+<status status="PASS" starttime="20231215 12:00:18.296" endtime="20231215 12:00:20.846"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:30.231" endtime="20231213 21:37:32.840"/>
+<status status="PASS" starttime="20231215 12:00:18.292" endtime="20231215 12:00:20.846"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:30.230" endtime="20231213 21:37:32.841"/>
+<status status="PASS" starttime="20231215 12:00:18.291" endtime="20231215 12:00:20.846"/>
 </kw>
-<kw name="E seleciono o periodo &quot;PM&quot;" library="BDDpt-br" sourcename="E ${keywords}">
+<kw name="E seleciono o periodo &quot;AM&quot;" library="BDDpt-br" sourcename="E ${keywords}">
 <kw name="Run Keywords" library="BuiltIn">
 <arg>${keywords}</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<kw name="seleciono o periodo &quot;PM&quot;" library="selectTimeModel" sourcename="seleciono o periodo &quot;${texto}&quot;">
+<kw name="seleciono o periodo &quot;AM&quot;" library="selectTimeModel" sourcename="seleciono o periodo &quot;${texto}&quot;">
 <kw name="clico pelo texto &quot;${texto}&quot;" library="selectTimePage" sourcename="clico pelo texto &quot;${texto}&quot;">
 <kw name="contains text map &quot;${texto}&quot;" library="baseMap" sourcename="contains text map &quot;${texto}&quot;">
 <var>${elementMap}</var>
 <kw name="Log" library="BuiltIn">
 <arg>//*[contains(@text,'${texto}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:32.847" level="INFO">//*[contains(@text,'PM')]</msg>
-<status status="PASS" starttime="20231213 21:37:32.847" endtime="20231213 21:37:32.847"/>
+<msg timestamp="20231215 12:00:20.850" level="INFO">//*[contains(@text,'AM')]</msg>
+<status status="PASS" starttime="20231215 12:00:20.850" endtime="20231215 12:00:20.850"/>
 </kw>
-<msg timestamp="20231213 21:37:32.847" level="INFO">${elementMap} = //*[contains(@text,'PM')]</msg>
-<status status="PASS" starttime="20231213 21:37:32.846" endtime="20231213 21:37:32.847"/>
+<msg timestamp="20231215 12:00:20.851" level="INFO">${elementMap} = //*[contains(@text,'AM')]</msg>
+<status status="PASS" starttime="20231215 12:00:20.850" endtime="20231215 12:00:20.851"/>
 </kw>
-<kw name="espera elemento &quot;${elementMap}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${elementMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:32.848" level="INFO">//*[contains(@text,'PM')]</msg>
-<status status="PASS" starttime="20231213 21:37:32.848" endtime="20231213 21:37:32.848"/>
+<msg timestamp="20231215 12:00:20.852" level="INFO">//*[contains(@text,'AM')]</msg>
+<status status="PASS" starttime="20231215 12:00:20.852" endtime="20231215 12:00:20.852"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:33.527" level="INFO">xpath criteria: //*[contains(@text,'PM')]</msg>
-<status status="PASS" starttime="20231213 21:37:32.848" endtime="20231213 21:37:33.527"/>
+<msg timestamp="20231215 12:00:21.504" level="INFO">xpath criteria: //*[contains(@text,'AM')]</msg>
+<status status="PASS" starttime="20231215 12:00:20.853" endtime="20231215 12:00:21.504"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:32.847" endtime="20231213 21:37:33.527"/>
+<status status="PASS" starttime="20231215 12:00:20.852" endtime="20231215 12:00:21.504"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${elementMap}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231213 21:37:33.528" level="INFO">Clicking element '//*[contains(@text,'PM')]'.</msg>
-<msg timestamp="20231213 21:37:33.683" level="INFO">xpath criteria: //*[contains(@text,'PM')]</msg>
-<status status="PASS" starttime="20231213 21:37:33.527" endtime="20231213 21:37:33.684"/>
+<msg timestamp="20231215 12:00:21.506" level="INFO">Clicking element '//*[contains(@text,'AM')]'.</msg>
+<msg timestamp="20231215 12:00:21.662" level="INFO">xpath criteria: //*[contains(@text,'AM')]</msg>
+<status status="PASS" starttime="20231215 12:00:21.504" endtime="20231215 12:00:21.662"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:32.846" endtime="20231213 21:37:33.684"/>
+<status status="PASS" starttime="20231215 12:00:20.850" endtime="20231215 12:00:21.662"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:32.845" endtime="20231213 21:37:33.684"/>
+<status status="PASS" starttime="20231215 12:00:20.850" endtime="20231215 12:00:21.662"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:32.841" endtime="20231213 21:37:33.684"/>
+<status status="PASS" starttime="20231215 12:00:20.847" endtime="20231215 12:00:21.662"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:32.841" endtime="20231213 21:37:33.684"/>
+<status status="PASS" starttime="20231215 12:00:20.846" endtime="20231215 12:00:21.662"/>
 </kw>
 <kw name="E clico em &quot;OK&quot;" library="BDDpt-br" sourcename="E ${keywords}">
 <kw name="Run Keywords" library="BuiltIn">
@@ -502,43 +502,43 @@ xpath criteria: //android.widget.TextView[contains(@text,'10')]</msg>
 <kw name="Log" library="BuiltIn">
 <arg>//android.widget.Button[contains(@text,'${id}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:33.692" level="INFO">//android.widget.Button[contains(@text,'OK')]</msg>
-<status status="PASS" starttime="20231213 21:37:33.692" endtime="20231213 21:37:33.692"/>
+<msg timestamp="20231215 12:00:21.669" level="INFO">//android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:21.668" endtime="20231215 12:00:21.669"/>
 </kw>
-<msg timestamp="20231213 21:37:33.692" level="INFO">${botaoMap} = //android.widget.Button[contains(@text,'OK')]</msg>
-<status status="PASS" starttime="20231213 21:37:33.691" endtime="20231213 21:37:33.692"/>
+<msg timestamp="20231215 12:00:21.669" level="INFO">${botaoMap} = //android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:21.668" endtime="20231215 12:00:21.669"/>
 </kw>
-<kw name="espera elemento &quot;${botaoMap}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${botaoMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:33.693" level="INFO">//android.widget.Button[contains(@text,'OK')]</msg>
-<status status="PASS" starttime="20231213 21:37:33.693" endtime="20231213 21:37:33.693"/>
+<msg timestamp="20231215 12:00:21.669" level="INFO">//android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:21.669" endtime="20231215 12:00:21.670"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:33.855" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'OK')]</msg>
-<status status="PASS" starttime="20231213 21:37:33.694" endtime="20231213 21:37:33.855"/>
+<msg timestamp="20231215 12:00:22.280" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:21.670" endtime="20231215 12:00:22.280"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:33.692" endtime="20231213 21:37:33.855"/>
+<status status="PASS" starttime="20231215 12:00:21.669" endtime="20231215 12:00:22.280"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${botaoMap}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231213 21:37:33.857" level="INFO">Clicking element '//android.widget.Button[contains(@text,'OK')]'.</msg>
-<msg timestamp="20231213 21:37:34.377" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'OK')]</msg>
-<status status="PASS" starttime="20231213 21:37:33.855" endtime="20231213 21:37:34.377"/>
+<msg timestamp="20231215 12:00:22.281" level="INFO">Clicking element '//android.widget.Button[contains(@text,'OK')]'.</msg>
+<msg timestamp="20231215 12:00:22.514" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:22.280" endtime="20231215 12:00:22.514"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:33.689" endtime="20231213 21:37:34.377"/>
+<status status="PASS" starttime="20231215 12:00:21.667" endtime="20231215 12:00:22.514"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:33.689" endtime="20231213 21:37:34.377"/>
+<status status="PASS" starttime="20231215 12:00:21.667" endtime="20231215 12:00:22.514"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:33.686" endtime="20231213 21:37:34.377"/>
+<status status="PASS" starttime="20231215 12:00:21.663" endtime="20231215 12:00:22.514"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:33.684" endtime="20231213 21:37:34.377"/>
+<status status="PASS" starttime="20231215 12:00:21.662" endtime="20231215 12:00:22.514"/>
 </kw>
 <kw name="Então o alarme com o horario &quot;10:45&quot; foi salvo" library="BDDpt-br" sourcename="Então ${keywords}">
 <kw name="Run Keywords" library="BuiltIn">
@@ -550,66 +550,580 @@ xpath criteria: //android.widget.TextView[contains(@text,'10')]</msg>
 <kw name="Log" library="BuiltIn">
 <arg>//android.widget.TextView[contains(@text,'${texto}')]</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:34.382" level="INFO">//android.widget.TextView[contains(@text,'10:45')]</msg>
-<status status="PASS" starttime="20231213 21:37:34.382" endtime="20231213 21:37:34.382"/>
+<msg timestamp="20231215 12:00:22.522" level="INFO">//android.widget.TextView[contains(@text,'10:45')]</msg>
+<status status="PASS" starttime="20231215 12:00:22.522" endtime="20231215 12:00:22.522"/>
 </kw>
-<msg timestamp="20231213 21:37:34.383" level="INFO">${elementMap} = //android.widget.TextView[contains(@text,'10:45')]</msg>
-<status status="PASS" starttime="20231213 21:37:34.382" endtime="20231213 21:37:34.383"/>
+<msg timestamp="20231215 12:00:22.523" level="INFO">${elementMap} = //android.widget.TextView[contains(@text,'10:45')]</msg>
+<status status="PASS" starttime="20231215 12:00:22.521" endtime="20231215 12:00:22.523"/>
 </kw>
-<kw name="espera elemento &quot;${elementMap}&quot;" library="basePage" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="espera elemento &quot;${elementMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
 <kw name="Log" library="BuiltIn">
 <arg>${elemento}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231213 21:37:34.383" level="INFO">//android.widget.TextView[contains(@text,'10:45')]</msg>
-<status status="PASS" starttime="20231213 21:37:34.383" endtime="20231213 21:37:34.384"/>
+<msg timestamp="20231215 12:00:22.524" level="INFO">//android.widget.TextView[contains(@text,'10:45')]</msg>
+<status status="PASS" starttime="20231215 12:00:22.524" endtime="20231215 12:00:22.524"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${elemento}</arg>
 <arg>${timeout}</arg>
-<arg>não foi possível encontrar o elemento</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20231213 21:37:36.032" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'10:45')]</msg>
-<status status="PASS" starttime="20231213 21:37:34.384" endtime="20231213 21:37:36.032"/>
+<msg timestamp="20231215 12:00:24.165" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'10:45')]</msg>
+<status status="PASS" starttime="20231215 12:00:22.524" endtime="20231215 12:00:24.165"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:34.383" endtime="20231213 21:37:36.032"/>
+<status status="PASS" starttime="20231215 12:00:22.524" endtime="20231215 12:00:24.166"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:34.381" endtime="20231213 21:37:36.032"/>
+<status status="PASS" starttime="20231215 12:00:22.521" endtime="20231215 12:00:24.166"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:34.379" endtime="20231213 21:37:36.032"/>
+<status status="PASS" starttime="20231215 12:00:22.515" endtime="20231215 12:00:24.166"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:34.378" endtime="20231213 21:37:36.032"/>
+<status status="PASS" starttime="20231215 12:00:22.514" endtime="20231215 12:00:24.166"/>
 </kw>
 <kw name="obtem evidencia para o cenario &quot;Cenario-02_alarmeFeature&quot;" library="baseModel" type="TEARDOWN" sourcename="obtem evidencia para o cenario &quot;${cenario}&quot;">
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <arg>${EVIDENCES_DIR}/${cenario}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20231213 21:37:36.599" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidences/Cenario-02_alarmeFeature.png"&gt;&lt;img src="../evidences/Cenario-02_alarmeFeature.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231213 21:37:36.033" endtime="20231213 21:37:36.600"/>
+<msg timestamp="20231215 12:00:24.725" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidences/Cenario-02_alarmeFeature.png"&gt;&lt;img src="../evidences/Cenario-02_alarmeFeature.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231215 12:00:24.167" endtime="20231215 12:00:24.725"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:36.032" endtime="20231213 21:37:36.600"/>
+<status status="PASS" starttime="20231215 12:00:24.166" endtime="20231215 12:00:24.725"/>
 </kw>
+<tag>ct02</tag>
 <tag>validado</tag>
-<status status="PASS" starttime="20231213 21:37:27.972" endtime="20231213 21:37:36.600"/>
+<status status="PASS" starttime="20231215 12:00:15.986" endtime="20231215 12:00:24.725"/>
+</test>
+<test id="s1-t3" name="Cenario 03: validar que é salvo o alarme digitando o horario" line="32">
+<kw name="Dado que estou na aba de &quot;Alarm&quot;" library="BDDpt-br" sourcename="Dado ${keywords}">
+<kw name="Run Keywords" library="BuiltIn">
+<arg>${keywords}</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="que estou na aba de &quot;Alarm&quot;" library="alarmeModel" sourcename="que estou na aba de &quot;${aba}&quot;">
+<kw name="clicar na aba &quot;${aba}&quot;" library="alarmePage" sourcename="clicar na aba &quot;${aba}&quot;">
+<kw name="aba map &quot;${aba}&quot;" library="alarmeMap" sourcename="aba map &quot;${aba}&quot;">
+<var>${abaMap}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//android.widget.FrameLayout[contains(@content-desc,'${aba}')]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:24.732" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:24.732" endtime="20231215 12:00:24.732"/>
+</kw>
+<msg timestamp="20231215 12:00:24.732" level="INFO">${abaMap} = //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:24.732" endtime="20231215 12:00:24.732"/>
+</kw>
+<kw name="espera elemento &quot;${abaMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>${elemento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:24.732" level="INFO">//android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:24.732" endtime="20231215 12:00:24.732"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${elemento}</arg>
+<arg>${timeout}</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231215 12:00:25.186" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:24.732" endtime="20231215 12:00:25.186"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:24.732" endtime="20231215 12:00:25.187"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${abaMap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 12:00:25.188" level="INFO">Clicking element '//android.widget.FrameLayout[contains(@content-desc,'Alarm')]'.</msg>
+<msg timestamp="20231215 12:00:25.446" level="INFO">xpath criteria: //android.widget.FrameLayout[contains(@content-desc,'Alarm')]</msg>
+<status status="PASS" starttime="20231215 12:00:25.187" endtime="20231215 12:00:25.446"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:24.731" endtime="20231215 12:00:25.446"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:24.730" endtime="20231215 12:00:25.446"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:24.728" endtime="20231215 12:00:25.446"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:24.727" endtime="20231215 12:00:25.446"/>
+</kw>
+<kw name="Quando clico no botao &quot;Add&quot;" library="BDDpt-br" sourcename="Quando ${keywords}">
+<kw name="Run Keywords" library="BuiltIn">
+<arg>${keywords}</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="clico no botao &quot;Add&quot;" library="alarmeModel" sourcename="clico no botao &quot;${botao}&quot;">
+<kw name="clicar no botao &quot;${botao}&quot;" library="alarmePage" sourcename="clicar no botao &quot;${botao}&quot;">
+<kw name="botao map &quot;${botao}&quot;" library="alarmeMap" sourcename="botao map &quot;${botao}&quot;">
+<var>${botao_map}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//android.widget.Button[contains(@content-desc,'${botao}')]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:25.452" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:25.452" endtime="20231215 12:00:25.452"/>
+</kw>
+<msg timestamp="20231215 12:00:25.452" level="INFO">${botao_map} = //android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:25.452" endtime="20231215 12:00:25.452"/>
+</kw>
+<kw name="espera elemento &quot;${botao_map}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>${elemento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:25.453" level="INFO">//android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:25.453" endtime="20231215 12:00:25.453"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${elemento}</arg>
+<arg>${timeout}</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231215 12:00:26.111" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:25.453" endtime="20231215 12:00:26.111"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:25.452" endtime="20231215 12:00:26.111"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${botao_map}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 12:00:26.113" level="INFO">Clicking element '//android.widget.Button[contains(@content-desc,'Add')]'.</msg>
+<msg timestamp="20231215 12:00:27.078" level="INFO">xpath criteria: //android.widget.Button[contains(@content-desc,'Add')]</msg>
+<status status="PASS" starttime="20231215 12:00:26.111" endtime="20231215 12:00:27.078"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:25.451" endtime="20231215 12:00:27.078"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:25.451" endtime="20231215 12:00:27.078"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:25.447" endtime="20231215 12:00:27.078"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:25.447" endtime="20231215 12:00:27.078"/>
+</kw>
+<kw name="E digito as horas &quot;3&quot; e os minutos &quot;32&quot;" library="BDDpt-br" sourcename="E ${keywords}">
+<kw name="Run Keywords" library="BuiltIn">
+<arg>${keywords}</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="digito as horas &quot;3&quot; e os minutos &quot;32&quot;" library="selectTimeModel" sourcename="digito as horas &quot;${hour}&quot; e os minutos &quot;${min}&quot;">
+<kw name="clico no botao pelo id &quot;mode&quot;" library="selectTimePage" sourcename="clico no botao pelo id &quot;${button}&quot;">
+<kw name="botao by contains id map &quot;${button}&quot;" library="selectTimeMap" sourcename="botao by contains id map &quot;${id}&quot;">
+<var>${botaoMap}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//android.widget.Button[contains(@resource-id,'${id}')][last()]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:27.085" level="INFO">//android.widget.Button[contains(@resource-id,'mode')][last()]</msg>
+<status status="PASS" starttime="20231215 12:00:27.085" endtime="20231215 12:00:27.085"/>
+</kw>
+<msg timestamp="20231215 12:00:27.085" level="INFO">${botaoMap} = //android.widget.Button[contains(@resource-id,'mode')][last()]</msg>
+<status status="PASS" starttime="20231215 12:00:27.085" endtime="20231215 12:00:27.085"/>
+</kw>
+<kw name="espera elemento &quot;${botaoMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>${elemento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:27.087" level="INFO">//android.widget.Button[contains(@resource-id,'mode')][last()]</msg>
+<status status="PASS" starttime="20231215 12:00:27.087" endtime="20231215 12:00:27.087"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${elemento}</arg>
+<arg>${timeout}</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231215 12:00:28.409" level="INFO">xpath criteria: //android.widget.Button[contains(@resource-id,'mode')][last()]
+xpath criteria: //android.widget.Button[contains(@resource-id,'mode')][last()]</msg>
+<status status="PASS" starttime="20231215 12:00:27.087" endtime="20231215 12:00:28.409"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:27.085" endtime="20231215 12:00:28.409"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${botaoMap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 12:00:28.411" level="INFO">Clicking element '//android.widget.Button[contains(@resource-id,'mode')][last()]'.</msg>
+<msg timestamp="20231215 12:00:28.580" level="INFO">xpath criteria: //android.widget.Button[contains(@resource-id,'mode')][last()]</msg>
+<status status="PASS" starttime="20231215 12:00:28.409" endtime="20231215 12:00:28.580"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:27.085" endtime="20231215 12:00:28.580"/>
+</kw>
+<kw name="insiro o texto &quot;${hour}&quot; no elemento &quot;Hour&quot;" library="selectTimePage" sourcename="insiro o texto &quot;${text}&quot; no elemento &quot;${element}&quot;">
+<kw name="input time map &quot;${element}&quot;" library="selectTimeMap" sourcename="input time map &quot;${texto}&quot;">
+<var>${elementMap}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//*[contains(@text,'${texto}')][last()]/../android.widget.FrameLayout/android.widget.EditText</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:28.582" level="INFO">//*[contains(@text,'Hour')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:28.581" endtime="20231215 12:00:28.582"/>
+</kw>
+<msg timestamp="20231215 12:00:28.582" level="INFO">${elementMap} = //*[contains(@text,'Hour')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:28.581" endtime="20231215 12:00:28.582"/>
+</kw>
+<kw name="input time by frame map &quot;${element}&quot;" library="selectTimeMap" sourcename="input time by frame map &quot;${texto}&quot;">
+<var>${elementFrame}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//*[contains(@text,'${texto}')][last()]/../android.widget.FrameLayout</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:28.583" level="INFO">//*[contains(@text,'Hour')][last()]/../android.widget.FrameLayout</msg>
+<status status="PASS" starttime="20231215 12:00:28.583" endtime="20231215 12:00:28.583"/>
+</kw>
+<msg timestamp="20231215 12:00:28.584" level="INFO">${elementFrame} = //*[contains(@text,'Hour')][last()]/../android.widget.FrameLayout</msg>
+<status status="PASS" starttime="20231215 12:00:28.582" endtime="20231215 12:00:28.584"/>
+</kw>
+<kw name="elemento is present by xpath &quot;${elementMap}&quot;" library="utils" sourcename="elemento is present by xpath &quot;${xpath}&quot;">
+<var>${isPresent}</var>
+<kw name="Get Matching Xpath Count" library="AppiumLibrary">
+<var>${c}</var>
+<arg>${xpath}</arg>
+<doc>Returns number of elements matching ``xpath``</doc>
+<msg timestamp="20231215 12:00:30.114" level="INFO">xpath criteria: //*[contains(@text,'Hour')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<msg timestamp="20231215 12:00:30.114" level="INFO">${c} = 1</msg>
+<status status="PASS" starttime="20231215 12:00:28.584" endtime="20231215 12:00:30.114"/>
+</kw>
+<if>
+<branch type="IF" condition="${c} &gt; 0">
+<return>
+<value>True</value>
+<status status="PASS" starttime="20231215 12:00:30.115" endtime="20231215 12:00:30.115"/>
+</return>
+<status status="PASS" starttime="20231215 12:00:30.115" endtime="20231215 12:00:30.115"/>
+</branch>
+<branch type="ELSE">
+<return>
+<value>False</value>
+<status status="NOT RUN" starttime="20231215 12:00:30.115" endtime="20231215 12:00:30.115"/>
+</return>
+<status status="NOT RUN" starttime="20231215 12:00:30.115" endtime="20231215 12:00:30.115"/>
+</branch>
+<status status="PASS" starttime="20231215 12:00:30.115" endtime="20231215 12:00:30.115"/>
+</if>
+<msg timestamp="20231215 12:00:30.115" level="INFO">${isPresent} = True</msg>
+<status status="PASS" starttime="20231215 12:00:28.584" endtime="20231215 12:00:30.115"/>
+</kw>
+<if>
+<branch type="IF" condition="${isPresent}">
+<kw name="Log" library="BuiltIn">
+<arg>Element is present, nothing to do</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:30.117" level="INFO">Element is present, nothing to do</msg>
+<status status="PASS" starttime="20231215 12:00:30.116" endtime="20231215 12:00:30.117"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:30.116" endtime="20231215 12:00:30.117"/>
+</branch>
+<branch type="ELSE">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${elementFrame}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20231215 12:00:30.117" endtime="20231215 12:00:30.117"/>
+</kw>
+<status status="NOT RUN" starttime="20231215 12:00:30.117" endtime="20231215 12:00:30.117"/>
+</branch>
+<status status="PASS" starttime="20231215 12:00:30.116" endtime="20231215 12:00:30.117"/>
+</if>
+<kw name="espera elemento &quot;${elementMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>${elemento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:30.118" level="INFO">//*[contains(@text,'Hour')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:30.118" endtime="20231215 12:00:30.118"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${elemento}</arg>
+<arg>${timeout}</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231215 12:00:30.237" level="INFO">xpath criteria: //*[contains(@text,'Hour')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:30.118" endtime="20231215 12:00:30.237"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:30.117" endtime="20231215 12:00:30.237"/>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<arg>${elementMap}</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<msg timestamp="20231215 12:00:30.239" level="INFO">Clear text field '//*[contains(@text,'Hour')][last()]/../android.widget.FrameLayout/android.widget.EditText'</msg>
+<msg timestamp="20231215 12:00:30.386" level="INFO">xpath criteria: //*[contains(@text,'Hour')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:30.237" endtime="20231215 12:00:30.387"/>
+</kw>
+<kw name="Input Text Into Current Element" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Types the given `text` into currently selected text field.</doc>
+<msg timestamp="20231215 12:00:30.390" level="INFO">Typing text '3' into current text field</msg>
+<status status="PASS" starttime="20231215 12:00:30.387" endtime="20231215 12:00:31.665"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:28.580" endtime="20231215 12:00:31.665"/>
+</kw>
+<kw name="insiro o texto &quot;${min}&quot; no elemento &quot;Minute&quot;" library="selectTimePage" sourcename="insiro o texto &quot;${text}&quot; no elemento &quot;${element}&quot;">
+<kw name="input time map &quot;${element}&quot;" library="selectTimeMap" sourcename="input time map &quot;${texto}&quot;">
+<var>${elementMap}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//*[contains(@text,'${texto}')][last()]/../android.widget.FrameLayout/android.widget.EditText</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:31.668" level="INFO">//*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:31.667" endtime="20231215 12:00:31.668"/>
+</kw>
+<msg timestamp="20231215 12:00:31.668" level="INFO">${elementMap} = //*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:31.666" endtime="20231215 12:00:31.668"/>
+</kw>
+<kw name="input time by frame map &quot;${element}&quot;" library="selectTimeMap" sourcename="input time by frame map &quot;${texto}&quot;">
+<var>${elementFrame}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//*[contains(@text,'${texto}')][last()]/../android.widget.FrameLayout</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:31.670" level="INFO">//*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout</msg>
+<status status="PASS" starttime="20231215 12:00:31.670" endtime="20231215 12:00:31.670"/>
+</kw>
+<msg timestamp="20231215 12:00:31.670" level="INFO">${elementFrame} = //*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout</msg>
+<status status="PASS" starttime="20231215 12:00:31.668" endtime="20231215 12:00:31.671"/>
+</kw>
+<kw name="elemento is present by xpath &quot;${elementMap}&quot;" library="utils" sourcename="elemento is present by xpath &quot;${xpath}&quot;">
+<var>${isPresent}</var>
+<kw name="Get Matching Xpath Count" library="AppiumLibrary">
+<var>${c}</var>
+<arg>${xpath}</arg>
+<doc>Returns number of elements matching ``xpath``</doc>
+<msg timestamp="20231215 12:00:32.393" level="INFO">xpath criteria: //*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<msg timestamp="20231215 12:00:32.393" level="INFO">${c} = 0</msg>
+<status status="PASS" starttime="20231215 12:00:31.672" endtime="20231215 12:00:32.393"/>
+</kw>
+<if>
+<branch type="IF" condition="${c} &gt; 0">
+<return>
+<value>True</value>
+<status status="NOT RUN" starttime="20231215 12:00:32.393" endtime="20231215 12:00:32.393"/>
+</return>
+<status status="NOT RUN" starttime="20231215 12:00:32.393" endtime="20231215 12:00:32.394"/>
+</branch>
+<branch type="ELSE">
+<return>
+<value>False</value>
+<status status="PASS" starttime="20231215 12:00:32.394" endtime="20231215 12:00:32.394"/>
+</return>
+<status status="PASS" starttime="20231215 12:00:32.394" endtime="20231215 12:00:32.394"/>
+</branch>
+<status status="PASS" starttime="20231215 12:00:32.393" endtime="20231215 12:00:32.394"/>
+</if>
+<msg timestamp="20231215 12:00:32.394" level="INFO">${isPresent} = False</msg>
+<status status="PASS" starttime="20231215 12:00:31.671" endtime="20231215 12:00:32.394"/>
+</kw>
+<if>
+<branch type="IF" condition="${isPresent}">
+<kw name="Log" library="BuiltIn">
+<arg>Element is present, nothing to do</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20231215 12:00:32.395" endtime="20231215 12:00:32.395"/>
+</kw>
+<status status="NOT RUN" starttime="20231215 12:00:32.394" endtime="20231215 12:00:32.395"/>
+</branch>
+<branch type="ELSE">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${elementFrame}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 12:00:32.398" level="INFO">Clicking element '//*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout'.</msg>
+<msg timestamp="20231215 12:00:33.833" level="INFO">xpath criteria: //*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout</msg>
+<status status="PASS" starttime="20231215 12:00:32.395" endtime="20231215 12:00:33.833"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:32.395" endtime="20231215 12:00:33.833"/>
+</branch>
+<status status="PASS" starttime="20231215 12:00:32.394" endtime="20231215 12:00:33.833"/>
+</if>
+<kw name="espera elemento &quot;${elementMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>${elemento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:33.834" level="INFO">//*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:33.834" endtime="20231215 12:00:33.835"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${elemento}</arg>
+<arg>${timeout}</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231215 12:00:34.092" level="INFO">xpath criteria: //*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:33.835" endtime="20231215 12:00:34.092"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:33.833" endtime="20231215 12:00:34.092"/>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<arg>${elementMap}</arg>
+<doc>Clears the text field identified by `locator`.</doc>
+<msg timestamp="20231215 12:00:34.095" level="INFO">Clear text field '//*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout/android.widget.EditText'</msg>
+<msg timestamp="20231215 12:00:34.381" level="INFO">xpath criteria: //*[contains(@text,'Minute')][last()]/../android.widget.FrameLayout/android.widget.EditText</msg>
+<status status="PASS" starttime="20231215 12:00:34.093" endtime="20231215 12:00:34.381"/>
+</kw>
+<kw name="Input Text Into Current Element" library="AppiumLibrary">
+<arg>${text}</arg>
+<doc>Types the given `text` into currently selected text field.</doc>
+<msg timestamp="20231215 12:00:34.386" level="INFO">Typing text '32' into current text field</msg>
+<status status="PASS" starttime="20231215 12:00:34.381" endtime="20231215 12:00:35.647"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:31.665" endtime="20231215 12:00:35.647"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:27.085" endtime="20231215 12:00:35.648"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:27.079" endtime="20231215 12:00:35.648"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:27.079" endtime="20231215 12:00:35.648"/>
+</kw>
+<kw name="E seleciono o periodo &quot;PM&quot;" library="BDDpt-br" sourcename="E ${keywords}">
+<kw name="Run Keywords" library="BuiltIn">
+<arg>${keywords}</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="seleciono o periodo &quot;PM&quot;" library="selectTimeModel" sourcename="seleciono o periodo &quot;${texto}&quot;">
+<kw name="clico pelo texto &quot;${texto}&quot;" library="selectTimePage" sourcename="clico pelo texto &quot;${texto}&quot;">
+<kw name="contains text map &quot;${texto}&quot;" library="baseMap" sourcename="contains text map &quot;${texto}&quot;">
+<var>${elementMap}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//*[contains(@text,'${texto}')]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:35.659" level="INFO">//*[contains(@text,'PM')]</msg>
+<status status="PASS" starttime="20231215 12:00:35.659" endtime="20231215 12:00:35.659"/>
+</kw>
+<msg timestamp="20231215 12:00:35.660" level="INFO">${elementMap} = //*[contains(@text,'PM')]</msg>
+<status status="PASS" starttime="20231215 12:00:35.658" endtime="20231215 12:00:35.660"/>
+</kw>
+<kw name="espera elemento &quot;${elementMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>${elemento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:35.661" level="INFO">//*[contains(@text,'PM')]</msg>
+<status status="PASS" starttime="20231215 12:00:35.661" endtime="20231215 12:00:35.661"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${elemento}</arg>
+<arg>${timeout}</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231215 12:00:36.346" level="INFO">xpath criteria: //*[contains(@text,'PM')]</msg>
+<status status="PASS" starttime="20231215 12:00:35.661" endtime="20231215 12:00:36.346"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:35.660" endtime="20231215 12:00:36.346"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${elementMap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 12:00:36.349" level="INFO">Clicking element '//*[contains(@text,'PM')]'.</msg>
+<msg timestamp="20231215 12:00:36.649" level="INFO">xpath criteria: //*[contains(@text,'PM')]</msg>
+<status status="PASS" starttime="20231215 12:00:36.346" endtime="20231215 12:00:36.650"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:35.658" endtime="20231215 12:00:36.650"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:35.657" endtime="20231215 12:00:36.650"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:35.650" endtime="20231215 12:00:36.650"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:35.649" endtime="20231215 12:00:36.650"/>
+</kw>
+<kw name="E clico em &quot;OK&quot;" library="BDDpt-br" sourcename="E ${keywords}">
+<kw name="Run Keywords" library="BuiltIn">
+<arg>${keywords}</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="clico em &quot;OK&quot;" library="selectTimeModel" sourcename="clico em &quot;${button}&quot;">
+<kw name="clico no botao pelo nome &quot;${button}&quot;" library="selectTimePage" sourcename="clico no botao pelo nome &quot;${button}&quot;">
+<kw name="botao by contains text map &quot;${button}&quot;" library="selectTimeMap" sourcename="botao by contains text map &quot;${id}&quot;">
+<var>${botaoMap}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//android.widget.Button[contains(@text,'${id}')]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:36.662" level="INFO">//android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:36.662" endtime="20231215 12:00:36.662"/>
+</kw>
+<msg timestamp="20231215 12:00:36.662" level="INFO">${botaoMap} = //android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:36.661" endtime="20231215 12:00:36.662"/>
+</kw>
+<kw name="espera elemento &quot;${botaoMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>${elemento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:36.664" level="INFO">//android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:36.664" endtime="20231215 12:00:36.664"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${elemento}</arg>
+<arg>${timeout}</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231215 12:00:36.918" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:36.664" endtime="20231215 12:00:36.918"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:36.663" endtime="20231215 12:00:36.918"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${botaoMap}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 12:00:36.923" level="INFO">Clicking element '//android.widget.Button[contains(@text,'OK')]'.</msg>
+<msg timestamp="20231215 12:00:37.472" level="INFO">xpath criteria: //android.widget.Button[contains(@text,'OK')]</msg>
+<status status="PASS" starttime="20231215 12:00:36.919" endtime="20231215 12:00:37.472"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:36.660" endtime="20231215 12:00:37.472"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:36.659" endtime="20231215 12:00:37.472"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:36.652" endtime="20231215 12:00:37.472"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:36.651" endtime="20231215 12:00:37.472"/>
+</kw>
+<kw name="Então o alarme com o horario &quot;3:32&quot; foi salvo" library="BDDpt-br" sourcename="Então ${keywords}">
+<kw name="Run Keywords" library="BuiltIn">
+<arg>${keywords}</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="o alarme com o horario &quot;3:32&quot; foi salvo" library="alarmePage" sourcename="o alarme com o horario &quot;${horario}&quot; foi salvo">
+<kw name="textView contains text map &quot;${horario}&quot;" library="baseMap" sourcename="textView contains text map &quot;${texto}&quot;">
+<var>${elementMap}</var>
+<kw name="Log" library="BuiltIn">
+<arg>//android.widget.TextView[contains(@text,'${texto}')]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:37.481" level="INFO">//android.widget.TextView[contains(@text,'3:32')]</msg>
+<status status="PASS" starttime="20231215 12:00:37.481" endtime="20231215 12:00:37.482"/>
+</kw>
+<msg timestamp="20231215 12:00:37.482" level="INFO">${elementMap} = //android.widget.TextView[contains(@text,'3:32')]</msg>
+<status status="PASS" starttime="20231215 12:00:37.480" endtime="20231215 12:00:37.482"/>
+</kw>
+<kw name="espera elemento &quot;${elementMap}&quot;" library="utils" sourcename="espera elemento &quot;${elemento}&quot;">
+<kw name="Log" library="BuiltIn">
+<arg>${elemento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231215 12:00:37.484" level="INFO">//android.widget.TextView[contains(@text,'3:32')]</msg>
+<status status="PASS" starttime="20231215 12:00:37.484" endtime="20231215 12:00:37.484"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${elemento}</arg>
+<arg>${timeout}</arg>
+<arg>não foi possível encontrar o elemento ${elemento}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20231215 12:00:40.023" level="INFO">xpath criteria: //android.widget.TextView[contains(@text,'3:32')]</msg>
+<status status="PASS" starttime="20231215 12:00:37.484" endtime="20231215 12:00:40.023"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:37.482" endtime="20231215 12:00:40.023"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:37.479" endtime="20231215 12:00:40.023"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:37.475" endtime="20231215 12:00:40.023"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:37.474" endtime="20231215 12:00:40.024"/>
+</kw>
+<kw name="obtem evidencia para o cenario &quot;Cenario-03_alarmeFeature&quot;" library="baseModel" type="TEARDOWN" sourcename="obtem evidencia para o cenario &quot;${cenario}&quot;">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<arg>${EVIDENCES_DIR}/${cenario}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20231215 12:00:41.339" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../evidences/Cenario-03_alarmeFeature.png"&gt;&lt;img src="../evidences/Cenario-03_alarmeFeature.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231215 12:00:40.025" endtime="20231215 12:00:41.339"/>
+</kw>
+<status status="PASS" starttime="20231215 12:00:40.024" endtime="20231215 12:00:41.339"/>
+</kw>
+<tag>ct03</tag>
+<tag>validado</tag>
+<status status="PASS" starttime="20231215 12:00:24.727" endtime="20231215 12:00:41.340"/>
 </test>
 <kw name="fechar aplicativo" library="baseConfiguration" type="TEARDOWN">
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20231213 21:37:36.602" endtime="20231213 21:37:38.049"/>
+<status status="PASS" starttime="20231215 12:00:41.342" endtime="20231215 12:00:42.566"/>
 </kw>
-<status status="PASS" starttime="20231213 21:37:36.601" endtime="20231213 21:37:38.050"/>
+<status status="PASS" starttime="20231215 12:00:41.342" endtime="20231215 12:00:42.566"/>
 </kw>
 <doc>Configuração de um alarme</doc>
-<status status="PASS" starttime="20231213 21:37:03.342" endtime="20231213 21:37:38.050"/>
+<status status="PASS" starttime="20231215 11:59:57.925" endtime="20231215 12:00:42.566"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="0" skip="0">validado</stat>
+<stat pass="1" fail="0" skip="0">ct01</stat>
+<stat pass="1" fail="0" skip="0">ct02</stat>
+<stat pass="1" fail="0" skip="0">ct03</stat>
+<stat pass="3" fail="0" skip="0">validado</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="alarmeFeature">alarmeFeature</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="alarmeFeature">alarmeFeature</stat>
 </suite>
 </statistics>
 <errors>

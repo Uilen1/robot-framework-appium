@@ -4,6 +4,7 @@ Library         AppiumLibrary
 Resource        ${EXECDIR}/src/pages/basePage.robot
 Resource        ${EXECDIR}/src/maps/baseMap.robot
 Resource        ${EXECDIR}/src/maps/selectTimeMap.robot
+Resource        ${EXECDIR}/src/utils/utils.robot
 
 *** Variables ***
 ${timeout} =    60
@@ -14,7 +15,7 @@ esperar elemento carregar "${elemento}"
     espera elemento "${elementMap}"
 
 clico view pelo resource-id "${element}" com "${taps}" cliques
-    ${elementMap} =    view by resourceId map "${element}"
+    ${elementMap} =    view by contains id map "${element}"
     espera elemento "${elementMap}"
     FOR    ${i}    IN RANGE    ${taps}
         Log    Current Index: ${i}
@@ -39,13 +40,27 @@ clico pelo texto "${texto}"
     espera elemento "${elementMap}"
     Click Element    ${elementMap}
 
-insiro o texto "${element}"
-    ${elementMap} =    view by contains resourceId map "${element}"
+insiro o texto "${text}" no elemento "${element}"
+    ${elementMap} =    input time map "${element}"
+    ${elementFrame} =    input time by frame map "${element}"
+#    ${isElementVisible}=    elemento attribute "focused" should be "false" in xpath "${elementMap}"
+    ${isPresent}=    elemento is present by xpath "${elementMap}"
+    IF    ${isPresent}
+        Log    Element is present, nothing to do
+    ELSE
+        Click Element    ${elementFrame}
+    END
     espera elemento "${elementMap}"
-    Input Text Into Current Element    ${elementMap}
+    Clear Text    ${elementMap}
+    Input Text Into Current Element    ${text}
 
 clico no botao pelo nome "${button}"
     ${botaoMap} =    botao by contains text map "${button}"
+    espera elemento "${botaoMap}"
+    Click Element    ${botaoMap}
+
+clico no botao pelo id "${button}"
+    ${botaoMap} =    botao by contains id map "${button}"
     espera elemento "${botaoMap}"
     Click Element    ${botaoMap}
 
