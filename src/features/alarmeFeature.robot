@@ -8,6 +8,9 @@ Resource            ${EXECDIR}/src/model/alarmeModel.robot
 Resource            ${EXECDIR}/src/model/selectTimeModel.robot
 Resource            ${EXECDIR}/src/model/baseModel.robot
 
+#****** Variables ***
+#&{DICTIONARY}    chave1=valor1    chave2=valor2
+
 
 *** Test Cases ***
 Cenario 01: validar que é aberto a tela de cadastrar alarmes
