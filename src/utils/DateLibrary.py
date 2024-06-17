@@ -1,7 +1,22 @@
+import locale
 from datetime import datetime, timedelta
 
 
 class DateLibrary:
+    locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
+
+    def get_current_date_by_format(self,format='timestamp'):
+        data_atual = datetime.now()
+        return data_atual.strftime(format)
+    
+    def get_next_business_day(self,format='timestamp'):
+        data_atual = datetime.now()
+        while   True:
+            data_atual += timedelta(days=1)
+            if data_atual.weekday() < 5:
+                break
+        return data_atual.strftime(format).strip()
+
     def get_current_date(self):
         return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
